@@ -144,6 +144,7 @@ namespace GradeBookTests
             // END GUARD CODE
 
             // Assert the Type property's value is Ranked
+            
             Assert.True(rankedGradeBook.GetType().GetProperty("Type").GetValue(rankedGradeBook).ToString() == Enum.Parse(gradebookEnum, "Ranked", true).ToString(), "`Type` wasn't set to `GradeBookType.Ranked` by the `GradeBook.GradeBooks.RankedGradeBook` Constructor.");
         }
     }
